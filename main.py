@@ -28,12 +28,12 @@ class Store:
             if product.get_name() == product_name:
                 if product.get_quantity() >= quantity:
                     product.quantity -= quantity
-                    print(f"Sold {quantity} {product_name}(s)")
+                    print(f"Sold {quantity} {product_name}(s)\n")
                     return
                 else:
-                    print("Not enough products in stock")
+                    print("Not enough products in stock\n")
                     return
-        print("Product not found")
+        print("Product not found'\n")
 
     def get_total_revenue(self):
         total_revenue = 0
@@ -42,7 +42,7 @@ class Store:
         return total_revenue
 
 
-store = Store("My Store", "123")
+
 
 
 
